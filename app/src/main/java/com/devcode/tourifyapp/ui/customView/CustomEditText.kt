@@ -15,7 +15,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.widget.addTextChangedListener
 import com.devcode.tourifyapp.R
 
-/*class CustomEditText: AppCompatEditText, View.OnTouchListener {
+class CustomEditText: AppCompatEditText, View.OnTouchListener {
     private lateinit var editTextBackground: Drawable
     private lateinit var editTextErrorBackground: Drawable
     private lateinit var eyeIcon: Drawable
@@ -154,4 +154,4 @@ import com.devcode.tourifyapp.R
         }
         return false
     }
-}*/
+}

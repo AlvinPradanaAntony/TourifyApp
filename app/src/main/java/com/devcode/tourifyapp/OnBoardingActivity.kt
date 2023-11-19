@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.viewpager2.widget.ViewPager2
 import com.devcode.tourifyapp.databinding.ActivityOnboardingBinding
+import com.devcode.tourifyapp.ui.login.LoginActivity
 
 class OnBoardingActivity : AppCompatActivity() {
     private lateinit var binding: ActivityOnboardingBinding
@@ -53,12 +54,12 @@ class OnBoardingActivity : AppCompatActivity() {
             if (viewPager.currentItem + 1 < sectionsPagerAdapter.itemCount) {
                 viewPager.currentItem += 1
             } else {
-                startActivity(Intent(this@OnBoardingActivity, MainActivity::class.java))
+                startActivity(Intent(this@OnBoardingActivity, LoginActivity::class.java))
                 finish()
             }
         }
         binding.skipButton.setOnClickListener {
-            startActivity(Intent(this@OnBoardingActivity, MainActivity::class.java))
+            startActivity(Intent(this@OnBoardingActivity, LoginActivity::class.java))
             finish()
         }
     }
