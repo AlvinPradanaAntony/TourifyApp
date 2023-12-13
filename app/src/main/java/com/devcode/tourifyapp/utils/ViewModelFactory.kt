@@ -5,7 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.dicoding.tourifyapp.data.remote.repository.UserRepository
 import com.dicoding.tourifyapp.di.Injection
-import com.dicoding.tourifyapp.ui.screen.login.LoginViewModel
+//import com.dicoding.tourifyapp.ui.screen.login.LoginViewModel
 
 class ViewModelFactory private constructor(
     private val userRepository: UserRepository
@@ -13,9 +13,9 @@ class ViewModelFactory private constructor(
 
     @Suppress("UNCHECKED_CAST")
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(LoginViewModel::class.java)) {
-            return LoginViewModel(userRepository) as T
-        }
+//        if (modelClass.isAssignableFrom(LoginViewModel::class.java)) {
+//            return LoginViewModel(userRepository) as T
+//        }
         throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
     }
 
